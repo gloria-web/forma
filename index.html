@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FCC: Survey Form - Restaurant</title>
+    <meta name="description" content="Survey Form, freeCodeCamp challenge.">
+    <meta name="keywords" content="survey form freecodecamp,survey form fcc,responsive web design survey form">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-sf.png">
+    <link rel="stylesheet" href="css/custome.css">
+</head>
+
+<body>
+<div id="wrapper">
+ <div class="header">
+  <div class="logo">
+   <span class="large-text swing">RestauranT</span>
+   <div class="small-text">Food & Drinks</div>
+  </div>
+  <h1 id="title">Restaurant evaluation form</h1>
+  <p id="description">We would love to hear your thoughts, concerns or problems with anything so we can improve!</p>
+ </div> <!-- / .header -->
+ <form action="" method="" id="survey-form">
+  <div class="form-group">
+   <label id="name-label" for="name">Name:</label><br>
+   <div class="input-wrapper">
+    <input type="text" id="name" name="name" class="input" placeholder="Enter youre name" required>
+    <span class="nameErr err"></span>
+   </div>
+  </div> <!-- / .form-group -->
+  <div class="form-group">
+   <label id="email-label" for="email">Email:</label><br>
+   <div class="input-wrapper">
+    <input type="email" id="email" name="email" class="input" placeholder="Enter youre email" required>
+    <span class="emailErr err"></span>
+   </div>
+  </div> <!-- / .form-group -->
+  <div class="form-group">
+   <label id="number-label" for="number">Age (optional):</label><br>
+   <div class="input-wrapper">
+    <input type="number" id="number" name="age" class="input" min="9" max="99" placeholder="Age">
+    <span class="numErr err"></span>
+   </div>
+  </div> <!-- / .form-group -->
+  <div class="form-group location">
+   <label for="dropdown">Restaurant location:</label><br>
+   <div class="select">
+    <select id="dropdown" name="dropdown" required>
+     <option value="" selected disabled>Choose Location</option>
+     <option value="Location A, Obere Str. 57">Location A, Obere Str. 57</option>
+     <option value="Location B, 120 Hanover Sq.">Location B, 120 Hanover Sq.</option>
+     <option value="Location C, 8 Johnstown Road">Location C, 8 Johnstown Road</option>
+     <option value="Location D, 2817 Milton Dr.">Location D, 2817 Milton Dr.</option>
+    </select>
+   </div>
+   <span class="locationErr err"></span>
+  </div> <!-- / .form-group.location -->
+  <div class="form-group service radio">
+   <p>How was your service experience?</p>
+   <span class="serviceRadio err"></span>
+   <label class="input-wrapper" for="dissatisfied">Dissatisfied
+    <input type="radio" id="dissatisfied" name="experience" class="radio-input" value="dissatisfied">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="average">Average
+    <input type="radio" id="average" name="experience" class="radio-input" value="average">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="good">Good
+    <input type="radio" id="good" name="experience" class="radio-input" value="good">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="excellent">Excellent
+    <input type="radio" id="excellent" name="experience" class="radio-input" value="excellent">
+    <span class="checkmark"></span>
+   </label><br>
+  </div> <!-- / .form-group.service.radio -->
+  <div class="form-group order">
+   <label for="typeOfOrder">Type of order:</label>
+   <div class="select">
+    <select id="typeOfOrder" name="typeOfOrder" required>
+     <option value="" selected disabled>Select type of order</option>
+     <option value="Pickup">Pickup</option>
+     <option value="Delivery">Delivery</option>
+     <option value="Catering">Catering</option>
+    </select>
+   </div>
+   <span class="orderErr err"></span>
+  </div> <!-- / .form-group.order -->
+  <div class="form-group service checkbox">
+   <p>What would you like to see improved? <span class="hint">(check all that apply)</span></p>
+   <label class="input-wrapper" for="food-quality">Food Quality
+    <input type="checkbox" id="food-quality" name="improve" value="Food Quality">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="cleanliness">Cleanliness
+    <input type="checkbox" id="cleanliness" name="improve" value="Cleanliness">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="order-accuracy">Order Accuracy
+    <input type="checkbox" id="order-accuracy" name="improve" value="Order Accuracy">
+    <span class="checkmark"></span>
+   </label><br>
+   <label class="input-wrapper" for="speed-of-service">Speed of service
+    <input type="checkbox" id="speed-of-service" name="improve" value="Speed of service">
+    <span class="checkmark"></span>
+   </label><br>
+  </div> <!-- / .form-group.service.checkbox -->
+  <div class="form-group comment">
+   <p>Any recommendations for how we could improve? <span>(optional)</span></p>
+   <div class="textarea-wrapper">
+    <textarea name="advice" id="advice" placeholder="Enter your comment here"></textarea>
+   </div>
+  </div> <!-- / .form-group -->
+  <div class="form-group btn-wrapper">
+   <button type="submit" id="submit" class="btn" value="Submit">Submit</button>
+  </div> <!-- / .form-group.btn-wrapper -->
+ </form>
+</div> <!-- / #wrapper -->
+<footer>
+ <span>Design by <a href="https://twitter.com/GloriaWeb2" target="_blank">gloria web</a></span>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
